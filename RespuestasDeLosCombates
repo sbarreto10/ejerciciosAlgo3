@@ -1,0 +1,13 @@
+1-¿Qué crítica le harías al protocolo de #estaHerido y #noEstaHerido? (en vez de tener solo el mensaje #estaHerido y hacer “#estaHerido not” para saber la negación)
+
+RTA1) No me parece una buena manera porque el not es referente al lenguaje, por lo tanto no representa el comportamiento claro y especifico del objeto
+
+
+2-¿Qué opinan de que para algunas funcionalidades tenemos 3 tests para el mismo comportamiento pero aplicando a cada uno de los combatientes (Arthas, Mankrik y Olgra)
+
+RTA2) Me parece correcto ya que, aunque responden a un mismo conjunto de mensajes, cada combatiente tiene comportamientos y estados internos diferentes. Es decir que el test probaría si el combatiente usado responde a los mensajes correctamente.
+
+
+3-¿Cómo modelaron el resultado de haber desarrollado un combate? ¿qué opciones consideraron y por qué se quedaron con la que entregaron y por qué descartaron a las otras?
+
+RTA3) Se modeló a través del orquestadorDeCombates. Al principio se trabajó solo con ese objeto, pero luego, al notar que al objeto temporal orquestadorDeCombates se le mandaba un mensaje para que devolviera un resultado, se optó por devolver un informe al cual se le puede consultar el estado final del juego 
